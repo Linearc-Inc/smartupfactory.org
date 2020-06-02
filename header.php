@@ -14,7 +14,7 @@
                 <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
                     <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
                         <div class="header-bar-email">
-                            MAIL: <a href="mailto::info@smartupfactory.org">info@smartupfactory.org</a>
+                            <a href="mailto::info@smartupfactory.org">info@smartupfactory.org</a>
                         </div><!-- .header-bar-email -->
 
                         <div class="header-bar-text">
@@ -46,6 +46,7 @@
                             <li><a href="gallery">Gallery</a></li>
                             <li><a href="whats-new">News</a></li>
                             <li><a href="contact-us">Contact</a></li>
+                            <li><a href="team">Team</a></li>
                             </ul>
                         </nav><!-- .site-navigation -->
 

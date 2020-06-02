@@ -2,7 +2,7 @@
     <div class="swiper-container hero-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide hero-content-wrap">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/hero.jpg" alt="">
+                <img src="https://smartupfactory.org/wp-content/uploads/2020/06/IMG_0121-scaled.jpg" alt="">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">
@@ -28,7 +28,7 @@
             </div><!-- .hero-content-wrap -->
 
             <div class="swiper-slide hero-content-wrap">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/hero.jpg" alt="">
+                <img src="https://smartupfactory.org/wp-content/uploads/2020/06/IMG_0587-scaled.jpg" alt="">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">
@@ -54,7 +54,7 @@
             </div><!-- .hero-content-wrap -->
 
             <div class="swiper-slide hero-content-wrap">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/hero.jpg" alt="">
+                <img src="https://smartupfactory.org/wp-content/uploads/2020/06/IMG_0184-scaled.jpg" alt="">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">
@@ -173,7 +173,7 @@
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/welcome.jpg" alt="welcome">
+                    <img src="https://smartupfactory.org/wp-content/uploads/2020/06/MG_7152-scaled.jpg" alt="welcome">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->

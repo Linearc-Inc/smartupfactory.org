@@ -909,6 +909,22 @@ ul.tabs-nav .tab-nav.active {
     text-decoration: none;
 }
 
+@media screen and (max-width: 992px) {
+    .event-wrap{
+        flex-direction:column;
+    }
+    .event-wrap figure{
+        width: unset;
+        display: block;
+        height: fit-content;
+        overflow: hidden;
+    }
+    .event-content-wrap{
+        width: unset;
+        margin-top:3px;
+    }
+}
+
 /*
 # Featured Cause
 --------------------------------*/
