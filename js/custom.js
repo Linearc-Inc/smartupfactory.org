@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#ff5a00", "#ff3600"]
+            gradient: ["#2196f3", "#2196f3"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(83 * progress) + '<i>%</i>');
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#ff5a00", "#ff3600"]
+            gradient: ["#2196f3", "#2196f3"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#ff5a00", "#ff3600"]
+            gradient: ["#2196f3", "#2196f3"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         size: 156,
         thickness: 3,
         fill: {
-            gradient: ["#ff5a00", "#ff3600"]
+            gradient: ["#2196f3", "#2196f3"]
         }
     }).on('circle-animation-progress', function(event, progress) {
         $(this).find('strong').html(Math.round(65 * progress) + '<i>%</i>');
@@ -139,14 +139,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Bar Filler
-    $('.featured-fund-raised-bar').barfiller({ barColor: '#ff5a00', duration: 1500 });
+    $('.featured-fund-raised-bar').barfiller({ barColor: '#2196f3', duration: 1500 });
 
-    $('.fund-raised-bar-1').barfiller({ barColor: '#ff5a00', duration: 1500 });
-    $('.fund-raised-bar-2').barfiller({ barColor: '#ff5a00', duration: 1500 });
-    $('.fund-raised-bar-3').barfiller({ barColor: '#ff5a00', duration: 1500 });
-    $('.fund-raised-bar-4').barfiller({ barColor: '#ff5a00', duration: 1500 });
-    $('.fund-raised-bar-5').barfiller({ barColor: '#ff5a00', duration: 1500 });
-    $('.fund-raised-bar-6').barfiller({ barColor: '#ff5a00', duration: 1500 });
+    $('.fund-raised-bar-1').barfiller({ barColor: '#2196f3', duration: 1500 });
+    $('.fund-raised-bar-2').barfiller({ barColor: '#2196f3', duration: 1500 });
+    $('.fund-raised-bar-3').barfiller({ barColor: '#2196f3', duration: 1500 });
+    $('.fund-raised-bar-4').barfiller({ barColor: '#2196f3', duration: 1500 });
+    $('.fund-raised-bar-5').barfiller({ barColor: '#2196f3', duration: 1500 });
+    $('.fund-raised-bar-6').barfiller({ barColor: '#2196f3', duration: 1500 });
 
     // Load more
     let $container      = $('.portfolio-container');
