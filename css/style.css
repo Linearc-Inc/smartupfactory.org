@@ -952,6 +952,7 @@ ul.tabs-nav .tab-nav.active {
 .cause-wrap figure img {
     display: block;
     width: 100%;
+    max-height: 200px;
 }
 
 .featured-cause .cause-content-wrap {
