@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?php wp_head(); ?>
 </head>
-<body>
+<body  data-url="<?php echo admin_url('admin-ajax.php'); ?>"  >
     <header class="site-header">
         <div class="top-header-bar">
             <div class="container">
