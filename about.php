@@ -44,8 +44,8 @@
                     </div><!-- .welcome-content -->
                 </div><!-- .col -->
 
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/welcome.jpg" alt="welcome">
+                <div  class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img  width="100%" src="https://smartupfactory.org/wp-content/uploads/2020/06/DSC8426-scaled.jpg" alt="welcome">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
