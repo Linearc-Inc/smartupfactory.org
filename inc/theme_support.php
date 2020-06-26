@@ -22,7 +22,7 @@ add_theme_support('post-thumbnails');
 //Ajax submit
 function my_enqueue()
 {
-    wp_enqueue_script('ajax-script', get_template_directory_uri().'/js/utils/my-ajax-script.js', array('jquery'));
+    wp_enqueue_script('ajax-script', get_template_directory_uri().'/js/utils/my-ajax-script.js', array('Jquery'));
     wp_localize_script(
         'ajax-script', 'my_ajax_object',
         array('ajax_url' => admin_url('admin-ajax.php'))
