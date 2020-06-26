@@ -5,13 +5,45 @@
   */
  ?>
 
-<?php get_header(); ?>
+<?php get_header();
+
+$classes= array( 
+"col-12 col-md-6 col-lg-4 portfolio-item",
+"col-12 col-md-6 col-lg-3 portfolio-item",
+"col-12 col-md-6 col-lg-5 portfolio-item",
+"col-12 col-md-6 col-lg-5 portfolio-item",
+"col-12 col-md-6 col-lg-3 mt-48 portfolio-item",
+"col-12 col-md-6 col-lg-4 mt-48 portfolio-item",
+"col-12 col-md-6 col-lg-3 mt-72 portfolio-item",
+"col-12 col-md-6 col-lg-6 mt-72 portfolio-item",
+"col-12 col-md-6 col-lg-3 mt-72 portfolio-item",
+"col-12 col-md-6 col-lg-4 portfolio-item",
+"col-12 col-md-6 col-lg-3 portfolio-item",
+"col-12 col-md-6 col-lg-5 portfolio-item",
+"col-12 col-md-6 col-lg-5 portfolio-item",
+"col-12 col-md-6 col-lg-3 mt-48 portfolio-item",
+"col-12 col-md-6 col-lg-4 mt-48 portfolio-item",
+"col-12 col-md-6 col-lg-3 mt-72 portfolio-item",
+"col-12 col-md-6 col-lg-6 mt-72 portfolio-item",
+"col-12 col-md-6 col-lg-3 mt-72 portfolio-item"
+);
+
+$innovations = new WP_Query(
+    array(
+        'post_type' => 'innovations',
+        'posts_per_page' => 18,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    )
+);
+$n=0;
+?>
 
     <div class="page-header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Stories</h1>
+                    <h1>Innovations</h1>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -20,174 +52,24 @@
     <div class="portfolio-wrap">
         <div class="container">
             <div class="row portfolio-container">
-                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
+            <?php while ($innovations->have_posts()) : $innovations->the_post(); ?>
+            <div class="<?php echo $classes[$n] ?>">
                     <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/a.jpg" alt=""></a>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(0,400)); ?></a>
 
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
+                        <h3 class="entry-title"><a href="#"> <?php the_title() ?> </a></h3>
+                        <h4><?php echo get_the_date('Y') ?> Innovations</h4>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/b.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/c.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AID</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/d.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AID</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/e.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/f.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/g.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-6 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/h.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AI</a>D</h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/i.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/a.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/b.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/c.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AID</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/d.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AID</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/e.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/f.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/g.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-6 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/h.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AI</a>D</h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/i.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
+    
+            <?php  $n++; ?>
+            <?php endwhile; wp_reset_query(); ?>
+            <!-- <div class="row">
                 <div class="col-12 d-flex justify-content-center mt-72">
                     <a href="#" class="btn gradient-bg load-more-btn">Load More</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
