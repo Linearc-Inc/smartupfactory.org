@@ -762,7 +762,7 @@ ul.tabs-nav .tab-nav.active {
 .home-page-welcome {
     position: relative;
     padding: 96px 0;
-    background: url("images/welcome-bg.jpg") no-repeat center;
+    background: url("https://smartupfactory.org/wp-content/uploads/2020/06/MG_7159-scaled.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
 }
@@ -1014,7 +1014,7 @@ ul.tabs-nav .tab-nav.active {
 .our-causes {
     position: relative;
     padding: 96px 0;
-    background: url("images/cause-bg.jpg") no-repeat center;
+    background: url("https://smartupfactory.org/wp-content/uploads/2020/06/IMG_9793-scaled.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
 }
@@ -2015,7 +2015,7 @@ ul.tabs-nav .tab-nav.active {
 # Contact Page
 --------------------------------------------------------------*/
 .elements-page .page-header {
-    background: url(images/elements-bg.jpg) no-repeat center;
+    background: url("https://smartupfactory.org/wp-content/uploads/2020/06/IMG_9793-scaled.jpg") no-repeat center;
 }
 
 /*--------------------------------------------------------------
@@ -2026,7 +2026,7 @@ ul.tabs-nav .tab-nav.active {
     padding: 96px 0 90px;
     font-weight: 500;
     color: #929191;
-    background: url("images/foot-bg.jpg") no-repeat center;
+    background: url("https://smartupfactory.org/wp-content/uploads/2020/06/IMG_0097-1-scaled.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
 }
