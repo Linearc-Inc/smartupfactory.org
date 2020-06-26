@@ -19,6 +19,11 @@ function load_styles_and_scripts($hook)
     wp_enqueue_script('countTo', get_template_directory_uri().'/js/jquery.countTo.min.js', array(), true);
     wp_enqueue_script('countdown', get_template_directory_uri().'/js/jquery.countdown.min.js', array(), true);
     wp_enqueue_script('swiper', get_template_directory_uri().'/js/swiper.min.js', array(), true);
+
+
+    if (is_page_template('contact.php')) {
+        wp_enqueue_script('contact_us', get_template_directory_uri().'/js/message.js', array(), true);
+    }
 }
 
 function load_admin_styles_and_scripts($hook)
