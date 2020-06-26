@@ -19,6 +19,16 @@ add_action('init', 'l_register_nav_menus');
 $formats = array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat');
 add_theme_support('post-formats', $formats);
 add_theme_support('post-thumbnails');
+//Ajax submit
+function my_enqueue()
+{
+    wp_enqueue_script('ajax-script', get_template_directory_uri().'/js/utils/my-ajax-script.js', array('jquery'));
+    wp_localize_script(
+        'ajax-script', 'my_ajax_object',
+        array('ajax_url' => admin_url('admin-ajax.php'))
+    );
+}
+add_action('wp_enqueue_scripts', 'my_enqueue');
 
 function theme_name_custom_logo_setup()
 {
