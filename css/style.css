@@ -955,7 +955,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .featured-cause .cause-content-wrap {
-    width: calc(100% - 280px);
+    /* width: calc(100% - 280px); */
 }
 
 .cause-content-wrap .entry-title a {
