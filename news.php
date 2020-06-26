@@ -1,7 +1,7 @@
 <?php
 
  /**
-  * Template Name: news.
+  * Template Name: events.
   */
  ?>
   <?php get_header(); ?>
