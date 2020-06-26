@@ -1639,6 +1639,7 @@ ul.tabs-nav .tab-nav.active {
     display: block;
     width: 100%;
     margin: 0;
+    max-height: 350px;
 }
 
 .news-content .entry-header {
