@@ -24,7 +24,7 @@
 
                     <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
                         <div class="donate-btn">
-                            <a href="#">Register Now</a>
+                            <a href="/become-a-champion">Register Now</a>
                         </div><!-- .donate-btn -->
                     </div><!-- .col -->
                 </div><!-- .row -->
