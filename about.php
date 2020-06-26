@@ -97,34 +97,8 @@
 
     <div class="about-testimonial">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-5">
-                    <div class="testimonial-cont">
-                        <div class="entry-content">
-                            <p>We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</p>
-                        </div>
-
-                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/testimonial-1.jpg" alt="">
-
-                            <h4>Maria Williams, <span>Volunteer</span></h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 offset-lg-2 col-lg-5">
-                    <div class="testimonial-cont">
-                        <div class="entry-content">
-                            <p>We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</p>
-                        </div>
-
-                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/testimonial-2.jpg" alt="">
-
-                            <h4>Cristian James, <span>Volunteer</span></h4>
-                        </div>
-                    </div>
-                </div>
+            <div style="position:relative;overflow-y:scroll" class="row">
+                                <img src="https://smartupfactory.org/wp-content/uploads/2020/06/overview.png" alt="smartup overview" srcset="https://smartupfactory.org/wp-content/uploads/2020/06/overview.png">
             </div>
         </div>
     </div>
