@@ -13,3 +13,5 @@ function l_register_nav_menus()
     register_nav_menu('main_menu', 'Header Navigation Menu');
     register_nav_menu('site_map', 'Footer Menu');
 }
+
+add_action('init', 'l_register_nav_menus');
