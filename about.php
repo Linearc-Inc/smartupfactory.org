@@ -38,9 +38,7 @@
                             </ol>
                         </div><!-- .entry-content -->
 
-                        <div class="entry-footer mt-5">
-                            <a href="#" class="btn gradient-bg mr-2">Read More</a>
-                        </div><!-- .entry-footer -->
+                     
                     </div><!-- .welcome-content -->
                 </div><!-- .col -->
 
