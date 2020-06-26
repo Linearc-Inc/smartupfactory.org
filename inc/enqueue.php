@@ -21,4 +21,10 @@ function load_styles_and_scripts($hook)
     wp_enqueue_script('swiper', get_template_directory_uri().'/js/swiper.min.js', array(), true);
 }
 
-add_action('wp_enqueue_scripts', 'linearc_load_styles_and_scripts');
+function load_admin_styles_and_scripts($hook)
+{
+    wp_enqueue_style('admin_css', get_template_directory_uri().'/theme-template/css/admin.css', array(), '1.0.0', 'all');
+}
+
+add_action('wp_enqueue_scripts', 'load_styles_and_scripts');
+add_action('admin_enqueue_scripts', 'load_admin_styles_and_scripts');
