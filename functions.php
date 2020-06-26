@@ -18,3 +18,4 @@ require get_template_directory().'/inc/custom-post-type-events.php';
 require get_template_directory().'/inc/custom-post-type-messages.php';
 require get_template_directory().'/inc/customise.php';
 require get_template_directory().'/inc/clean_up.php';
+require get_template_directory().'/inc/ajax_requests.php';
