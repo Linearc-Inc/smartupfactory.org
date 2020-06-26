@@ -6,25 +6,25 @@
                         <div class="foot-about">
                             <h2><a class="foot-logo" href="#"><img width="100px"  src="https://smartupfactory.org/wp-content/uploads/2020/05/smart.png" alt=""></a></h2>
                             <ul class="d-flex flex-wrap align-items-center">
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li> -->
+                                <li><a href="https://www.facebook.com/smartupfactoryugand"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/smartupfactory/"><i class="fa fa-twitter"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                                <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+                                <li><a href="https://www.linkedin.com/company/smartup-factory"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div><!-- .foot-about -->
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                         <h2>Useful Links</h2>
-
-                        <ul>
-                            <li><a href="#">Privacy Polticy</a></li>
-                            <li><a href="#">Become  a Champion</a></li>
-                            <li><a href="#">Donate</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu(array(
+                        'theme_location' => 'site_map',
+                        'container' => false,
+                        'menu_class' => '',
+                        ));
+                        ?>
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
