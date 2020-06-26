@@ -30,22 +30,27 @@
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                         <div class="foot-latest-news">
                             <h2>Upcoming Events</h2>
+<?php
+
+        $upcoming_events = new WP_Query(
+        array(
+            'post_status' => 'future',
+            'post_type' => 'events',
+            'posts_per_page' => 13,
+            'orderby' => 'date',
+            'order' => 'ASC',
+        )
+    );
+    ?>
+
 
                             <ul>
-                                <li>
-                                    <h3><a href="#">Girls Leadership Academy #Season2</a></h3>
-                                    <div class="posted-date">Aug 07, 2020</div>
-                                </li>
-
-                                <li>
-                                    <h3><a href="#">Innovation 2020 Pitching</a></h3>
-                                    <div class="posted-date">Aug 25, 2020</div>
-                                </li>
-
-                                <li>
-                                    <h3><a href="#">Reusuable Pads Making Liira</a></h3>
-                                    <div class="posted-date">Aug 25, 2020</div>
-                                </li>
+                                <?php while ($upcoming_events->have_posts()) : $upcoming_events->the_post(); ?>
+                                    <li>
+                                        <h3><a href="<?php the_permalink(); ?>"  ><?php the_title(); ?></a></h3>
+                                        <div class="posted-date"><?php the_date(); ?></div>
+                                    </li>
+                                <?php endwhile; wp_reset_query(); ?>
                             </ul>
                         </div><!-- .foot-latest-news -->
                     </div><!-- .col -->
