@@ -150,7 +150,7 @@
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-5 order-1 order-lg-2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/oshomah.jpg" alt="">
+                    <img src="https://smartupfactory.org/wp-content/uploads/2020/06/IMG_9793-scaled.jpg" alt="">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
