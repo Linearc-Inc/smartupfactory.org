@@ -57,7 +57,7 @@
 
                 <div class="col-12">
                     <div class="contact-gmap">
-                        <iframe width="600" height="450" frameborder="0" style="border:0" src="<?php echo get_template_directory_uri(); ?>/https://www.google.com/maps/embed/v1/place?q=usa&key=AIzaSyC2LvnNLzWxHgFm_XfpFG9wHUuyEj6rXSs" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7390557945096!2d32.56674741431874!3d0.3611613640556279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbaedafae0a81%3A0x292fd72832c2600c!2sSmartup%20Factory!5e0!3m2!1sen!2sug!4v1593003704511!5m2!1sen!2sug" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div><!-- .row -->
