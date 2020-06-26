@@ -1,9 +1,9 @@
 <?php
 
-function linearc_load_styles_and_scripts($hook)
+function load_styles_and_scripts($hook)
 {
-    
-    wp_deregister_script('Jquery');
+    wp_dequeue_script('jquery');
+    wp_deregister_script('jquery');
     wp_register_script('Jquery', get_template_directory_uri().'/js/jquery.js', false, '3.4.1', false);
     wp_enqueue_script('Jquery');
     wp_enqueue_style('bootstrap', get_template_directory_uri().'/css/bootstrap.min.css', array(), '1.0.0', 'all');
