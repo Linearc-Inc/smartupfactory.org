@@ -456,6 +456,23 @@ a:hover, a:active {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2196f3', endColorstr='#2196f3',GradientType=1 ); /* ie6-9 */
     color: #fff;
 }
+.btn.gradient-bg>span{
+    margin-top: unset;
+}
+
+#contact-form .btn.gradient-bg .loader{
+display: none;
+}
+
+
+#contact-form.loading .btn.gradient-bg .loader{
+display: block;
+}
+
+#contact-form.loading .btn.gradient-bg .button-info{
+    display: none;
+}
+
 
 /*
 # Accordion
