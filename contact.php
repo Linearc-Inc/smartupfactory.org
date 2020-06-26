@@ -43,14 +43,19 @@
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-7">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <textarea rows="15" cols="6" placeholder="Messages"></textarea>
+                    <form class="contact-form" id="contact-form">
+                        <input required name="email" type="email" placeholder="Email">
+                        <input required name="username" type="text" placeholder="Name">
+                        <input required name="subject" type="text" placeholder="Message Subject">
+                        <textarea required name="message" rows="15" cols="6" placeholder="Messages"></textarea>
 
                         <span>
-                            <input class="btn gradient-bg" type="submit" value="Contact us">
+                            <button class="btn gradient-bg" type="submit">
+                                <span class="button-info">Contact Us</span>
+                                <span class="loader"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></span>
+                            </button>
                         </span>
+                        <span id="message"></span>
                     </form><!-- .contact-form -->
 
                 </div><!-- .col -->
