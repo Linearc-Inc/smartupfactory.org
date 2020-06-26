@@ -15,3 +15,6 @@ function l_register_nav_menus()
 }
 
 add_action('init', 'l_register_nav_menus');
+
+$formats = array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat');
+add_theme_support('post-formats', $formats);
