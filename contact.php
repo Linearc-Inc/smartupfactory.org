@@ -21,9 +21,9 @@
             <div class="row">
                 <div class="col-12 col-lg-5">
                     <div class="entry-content">
-                        <h2>Get In touch with us</h2>
+                        <h2>Let's talk. Let's get moving.</h2>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, conse ctetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accu msan sodales odio, id tempus velit ullamc.</p>
+                        <p>Want to partner with us or send a shout out? Have any inquiries? Get in touch. We are open all week and are readily available to answer your questions.</p>
 
                         <ul class="contact-social d-flex flex-wrap align-items-center">
                                 <!-- <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li> -->
