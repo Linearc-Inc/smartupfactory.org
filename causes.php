@@ -150,8 +150,7 @@
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-5 order-1 order-lg-2">
-                    <img src="https://smartupfactory.org/wp-content/uploads/2020/06/IMG_9793-scaled.jpg" alt="">
-                </div><!-- .col -->
+                <img style="max-width:100%" src="https://smartupfactory.org/wp-content/uploads/2020/06/IMG_9793-scaled.jpg" alt="causes image">                </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
     </div><!-- .highlighted-cause -->
