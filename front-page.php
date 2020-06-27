@@ -239,7 +239,7 @@
 
                         <div class="cause-wrap d-flex flex-wrap justify-content-between">
                             <figure class="m-0">
-                                <?php echo get_the_post_thumbnail( $annual_innovation->ID); ?>
+                                <?php echo get_the_post_thumbnail($annual_innovation->ID); ?>
                             </figure>
 
                             <div class="cause-content-wrap">
@@ -278,7 +278,7 @@
 
 <?php get_header();
 
-    $upcoming_events = new WP_Query(
+    $stories = new WP_Query(
         array(
             'post_type' => 'stories',
             'posts_per_page' => 10,
@@ -292,11 +292,11 @@
                 <div class="col-12">
                     <div class="swiper-container causes-slider">
                         <div class="swiper-wrapper">
-                        <?php while ($upcoming_events->have_posts()) : $upcoming_events->the_post(); ?>
-                        <div class="swiper-slide">
+                        <?php while ($stories->have_posts()) : $stories->the_post(); ?>
+                        <div class="swiper-slide" style="width:unset !important;">
                                 <div class="cause-wrap">
                                     <figure class="m-0">
-                                      <?php the_post_thumbnail() ?>
+                                      <?php the_post_thumbnail(); ?>
 
                                         <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
                                             <a href="<?php the_permalink(); ?>"   class="btn gradient-bg mr-2">Read More</a>
@@ -305,11 +305,11 @@
 
                                     <div class="cause-content-wrap">
                                         <header class="entry-header d-flex flex-wrap align-items-center">
-                                            <h3 class="entry-title w-100 m-0"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
+                                            <h3 class="entry-title w-100 m-0"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                         </header><!-- .entry-header -->
 
                                         <div class="entry-content">
-                                            <p class="m-0"><?php the_excerpt() ?></p>
+                                            <p class="m-0"><?php the_excerpt(); ?></p>
                                         </div><!-- .entry-content -->
                                     </div><!-- .cause-content-wrap -->
                                 </div><!-- .cause-wrap -->
