@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         } );
+
+
+  
     
         // Accordion & Toggle
         $('.accordion-wrap.type-accordion').collapsible({
@@ -75,56 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
             $('.tab-nav:first-child').trigger('click');
         });
-    
-        // Circular Progress Bar
-        $('#loader_1').circleProgress({
-            startAngle: -Math.PI / 4 * 2,
-            value: 0.83,
-            size: 156,
-            thickness: 3,
-            fill: {
-                gradient: ["#2196f3", "#2196f3"]
-            }
-        }).on('circle-animation-progress', function(event, progress) {
-            $(this).find('strong').html(Math.round(83 * progress) + '<i>%</i>');
-        });
-    
-        $('#loader_2').circleProgress({
-            startAngle: -Math.PI / 4 * 2,
-            value: 0.9999,
-            size: 156,
-            thickness: 3,
-            fill: {
-                gradient: ["#2196f3", "#2196f3"]
-            }
-        }).on('circle-animation-progress', function(event, progress) {
-            $(this).find('strong').html(Math.round(100 * progress) + '<i>%</i>');
-        });
-    
-        $('#loader_3').circleProgress({
-            startAngle: -Math.PI / 4 * 2,
-            value: 0.75,
-            size: 156,
-            thickness: 3,
-            fill: {
-                gradient: ["#2196f3", "#2196f3"]
-            }
-        }).on('circle-animation-progress', function(event, progress) {
-            $(this).find('strong').html(Math.round(75 * progress) + '<i>%</i>');
-        });
-    
-        $('#loader_4').circleProgress({
-            startAngle: -Math.PI / 4 * 2,
-            value: 0.65 ,
-            size: 156,
-            thickness: 3,
-            fill: {
-                gradient: ["#2196f3", "#2196f3"]
-            }
-        }).on('circle-animation-progress', function(event, progress) {
-            $(this).find('strong').html(Math.round(65 * progress) + '<i>%</i>');
-        });
-    
+  
         // Counter
         $(".start-counter").each(function () {
             var counter = $(this);
@@ -135,31 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
-    
-        // Bar Filler
-        $('.featured-fund-raised-bar').barfiller({ barColor: '#2196f3', duration: 1500 });
-    
-        $('.fund-raised-bar-1').barfiller({ barColor: '#2196f3', duration: 1500 });
-        $('.fund-raised-bar-2').barfiller({ barColor: '#2196f3', duration: 1500 });
-        $('.fund-raised-bar-3').barfiller({ barColor: '#2196f3', duration: 1500 });
-        $('.fund-raised-bar-4').barfiller({ barColor: '#2196f3', duration: 1500 });
-        $('.fund-raised-bar-5').barfiller({ barColor: '#2196f3', duration: 1500 });
-        $('.fund-raised-bar-6').barfiller({ barColor: '#2196f3', duration: 1500 });
-    
-        // Load more
-        let $container      = $('.portfolio-container');
-        let $item           = $('.portfolio-item');
-    
-        $item.slice(0, 9).addClass('visible');
-    
-        $('.load-more-btn').on('click', function (e) {
-            e.preventDefault();
-    
-            $('.portfolio-item:hidden').slice(0, 9).addClass('visible');
-        });
-    
-    
-    
+            
     })(jQuery);
     
     
