@@ -10,7 +10,7 @@
         )
     );
     ?>
-    <div class="swiper-container hero-slider" style="height:70vh;">
+    <div class="swiper-container hero-slider" style="height:100vh;">
         <div class="swiper-wrapper">
             <div class="swiper-slide hero-content-wrap">
                 <img src="https://smartupfactory.org/wp-content/uploads/2020/06/IMG_0121-scaled.jpg" alt="">
