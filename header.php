@@ -7,7 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?php wp_head(); ?>
 </head>
-<body  data-url="<?php echo admin_url('admin-ajax.php'); ?>"  >
+
+<?php
+if (is_front_page()) {
+    $home_class = array('home-page');
+} else {
+    $home_class = array('no-home');
+}
+?>
+<body <?php body_class($home_class); ?>  data-url="<?php echo admin_url('admin-ajax.php'); ?>"  >
     <header class="site-header">
         <div class="top-header-bar">
             <div class="container">
