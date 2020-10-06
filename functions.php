@@ -11,10 +11,10 @@
  */
 
 require get_template_directory().'/inc/enqueue.php';
+require get_template_directory().'/inc/theme_options.php';
 require get_template_directory().'/inc/theme_support.php';
 require get_template_directory().'/inc/custom-post-type-stories.php';
 require get_template_directory().'/inc/custom-post-type-innovations.php';
-require get_template_directory().'/inc/custom-post-type-events.php';
 require get_template_directory().'/inc/custom-post-type-messages.php';
 require get_template_directory().'/inc/customise.php';
 require get_template_directory().'/inc/clean_up.php';
