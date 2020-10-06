@@ -18,10 +18,16 @@ img {
 # Links
 --------------------------------------------------------------*/
 a {
-    color: #262626;
+    color: #fff;
+    text-decoration: none;
+
 }
 
-.home-page .site-header a{
+a:hover {
+    text-decoration: none;
+}
+
+.home-page .site-header .nav-bar a{
     color: #2196f3 !important;
 }
 
@@ -225,7 +231,6 @@ a:hover, a:active {
     margin: 20px 0px;
 }
 .site-navigation ul li a {
-    border-bottom: 3px solid #fff;
     display: block;
     padding: 16px 0;
     font-size: 14px;
@@ -256,9 +261,16 @@ a:hover, a:active {
 
 .site-navigation ul li a:hover,
 .site-navigation ul li.current-menu-item a {
-    border-bottom: 3px solid #2196f3;
     color: #2196f3;
 }
+
+.home-page .site-navigation ul li a:hover,
+.home-page .site-navigation ul li.current-menu-item a {
+    color: #fff !important;
+
+}
+
+
 
 /*
 # Menu SHopping Cart

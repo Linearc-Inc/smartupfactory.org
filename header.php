@@ -22,17 +22,17 @@ if (is_front_page()) {
                 <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
                     <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
                         <div class="header-bar-email">
-                            <a href="mailto::info@smartupfactory.org">info@smartupfactory.org</a>
+                            <a href="mailto::<?php echo get_option( 'admin_email', '' ); ?>" target="_blank"><?php echo get_option( 'admin_email', '' ); ?></a>
                         </div><!-- .header-bar-email -->
 
                         <div class="header-bar-text">
-                            <p>PHONE: <span>+256 783 062 777</span></p>
+                            <p>PHONE: <span><a href="tel:<?php echo get_option( 'phone_number', '' ); ?><"><?php echo get_option( 'phone_number', '' ); ?></a></span></p>
                         </div><!-- .header-bar-text -->
                     </div><!-- .col -->
 
                     <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
                         <div class="donate-btn">
-                            <a href="/become-a-champion">Register Now</a>
+                            <a href="<?php echo get_option( 'top_header_bar_link', '/' ) ?>"><?php echo get_option( 'top_header_bar_link_title', 'join us' ) ?></a>
                         </div><!-- .donate-btn -->
                     </div><!-- .col -->
                 </div><!-- .row -->
