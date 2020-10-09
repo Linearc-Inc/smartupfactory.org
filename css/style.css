@@ -1204,7 +1204,7 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/
-.single-page .page-header {
+.single .page-header {
     position: relative;
     z-index: 99;
     padding-top: 100px;
@@ -1212,7 +1212,7 @@ ul.tabs-nav .tab-nav.active {
     background-size: cover !important;
 }
 
-.single-page .page-header::after {
+.single .page-header::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1223,7 +1223,7 @@ ul.tabs-nav .tab-nav.active {
     background: rgba(0,0,0,.7);
 }
 
-.single-page .page-header h1 {
+.single .page-header h1 {
     position: relative;
     padding-bottom: 24px;
     font-size: 36px;
@@ -2141,16 +2141,16 @@ ul.tabs-nav .tab-nav.active {
     color: #fff;
 }
 
-.foot-latest-news ul li {
+.foot-latest-events ul li {
     display: block;
     margin-bottom: 36px;
 }
 
-.foot-latest-news ul li h3 {
-    font-size: 14px;
+.foot-latest-events ul li h3 {
+    font-size: 14px !important;
 }
 
-.foot-latest-news ul li .posted-date {
+.foot-latest-events ul li .posted-date {
     font-size: 12px;
     color: #2196f3;
 }

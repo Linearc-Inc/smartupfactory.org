@@ -26,33 +26,8 @@
                         ));
                         ?>
                     </div><!-- .col -->
-
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-latest-news">
-                            <h2>Upcoming Events</h2>
-<?php
-
-        $upcoming_events = new WP_Query(
-        array(
-            'post_status' => 'future',
-            'post_type' => 'events',
-            'posts_per_page' => 13,
-            'orderby' => 'date',
-            'order' => 'ASC',
-        )
-    );
-    ?>
-
-
-                            <ul>
-                                <?php while ($upcoming_events->have_posts()) : $upcoming_events->the_post(); ?>
-                                    <li>
-                                        <h3><a href="<?php the_permalink(); ?>"  ><?php the_title(); ?></a></h3>
-                                        <div class="posted-date"><?php the_date(); ?></div>
-                                    </li>
-                                <?php endwhile; wp_reset_query(); ?>
-                            </ul>
-                        </div><!-- .foot-latest-news -->
+                         <?php echo do_shortcode("[l_upcoming_footer_events]"); ?>
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
