@@ -22,7 +22,7 @@
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
                     <div class="welcome-content">
                         <header class="entry-header">
-                            <h2 class="entry-title">Wellcome to our Charity</h2>
+                            <h2 class="entry-title">Welcome to our Charity</h2>
                         </header><!-- .entry-header -->
 
                         <div class="entry-content mt-5">

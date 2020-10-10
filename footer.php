@@ -7,7 +7,7 @@
                             <h2><a class="foot-logo" href="#"><img width="100px"  src="https://smartupfactory.org/wp-content/uploads/2020/05/smart.png" alt=""></a></h2>
                             <ul class="d-flex flex-wrap align-items-center">
                                 <!-- <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li> -->
-                                <li><a href="https://www.facebook.com/smartupfactoryugand"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/smartupfactoryuganda"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/smartupfactory/"><i class="fa fa-twitter"></i></a></li>
                                 <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
                                 <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
@@ -35,9 +35,9 @@
                             <h2>Contact</h2>
 
                             <ul>
-                                <li><i class="fa fa-phone"></i><span>+256 783 062 777</span></li>
-                                <li><i class="fa fa-envelope"></i><span>info@smartupfactory.org</span></li>
-                                <li><i class="fa fa-map-marker"></i><span>Tulla Rd Kawempe, Kampala Uganda.</span></li>
+                                <li><i class="fa fa-phone"></i><span><?php echo get_option( 'phone_number', '' );?></span></li>
+                                <li><i class="fa fa-envelope"></i><span><?php echo get_option( 'admin_email', '' ); ?></span></li>
+                                <li><i class="fa fa-map-marker"></i><span><?php echo get_option( 'pysical_address', '' );?></span></li>
                             </ul>
                         </div><!-- .foot-contact -->
 
