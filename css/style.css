@@ -1372,56 +1372,58 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Causes
 --------------------------------------------------------------*/
-.causes-page .page-header {
+.page-header {
     background: url(images/causes-bg.jpg) no-repeat center;
 }
 
-.causes-page .featured-cause {
+ .featured-cause {
  padding: 96px 0;
 }
 
-.causes-page .our-causes {
+.our-causes {
     position: relative;
     padding:  70px 0 96px;
     background: none;
 }
 
-.causes-page .our-causes .cause-wrap {
+ .our-causes .cause-wrap {
     margin-top: 36px;
 }
 
-.causes-page .our-causes::after {
+.our-causes::after {
     display: none;
 }
 
-.causes-page .our-causes .cause-content-wrap {
+.our-causes .cause-content-wrap {
     border: 1px solid #e0e0e0;
     border-top: 0;
 }
 
-.causes-page .highlighted-cause {
+.highlighted-cause {
     padding: 46px 0 96px;
     background: #262626;
 }
 
-.causes-page .highlighted-cause .entry-title {
+
+
+.highlighted-cause .entry-title {
     padding-right: 24px;
     margin-top: 60px;
     line-height: 1.6;
     color: #fff;
 }
 
-.causes-page .highlighted-cause .entry-title::before {
+.highlighted-cause .entry-title::before {
     display: none;
 }
 
-.causes-page .highlighted-cause .entry-content {
+.highlighted-cause .entry-content {
     font-size: 14px;
     line-height: 2;
     color: #edf3f5;
 }
 
-.causes-page .highlighted-cause img {
+.highlighted-cause img {
     width: 100%;
     margin-top: 60px;
 }
@@ -1962,7 +1964,7 @@ ul.tabs-nav .tab-nav.active {
 /*--------------------------------------------------------------
 # Contact Page
 --------------------------------------------------------------*/
-.contact-page .page-header {
+.page-template-contact .page-header {
     background: url(images/contact-bg.jpg) no-repeat center;
 }
 
