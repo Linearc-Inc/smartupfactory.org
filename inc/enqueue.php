@@ -4,8 +4,8 @@ function load_styles_and_scripts($hook)
 {
     wp_dequeue_script('jquery');
     wp_deregister_script('jquery');
-    wp_register_script('Jquery', get_template_directory_uri().'/vendor/jquery/jquery.js', false, '3.4.1', false);
-    wp_enqueue_script('Jquery');
+    wp_register_script('jquery', get_template_directory_uri().'/vendor/jquery/jquery.js', false, '3.4.1', false);
+    wp_enqueue_script('jquery');
     wp_enqueue_style('bootstrap', get_template_directory_uri().'/css/bootstrap.min.css', array(), '1.0.0', 'all');
     wp_enqueue_style('elegant', get_template_directory_uri().'/css/elegant-fonts.css', array(), '1.0.0', 'all');
     wp_enqueue_style('awesome', get_template_directory_uri().'/css/font-awesome.css', array(), '1.0.0', 'all');
