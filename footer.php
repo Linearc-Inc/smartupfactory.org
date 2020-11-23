@@ -27,7 +27,7 @@
                         ?>
                     </div><!-- .col -->
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                         <?php echo do_shortcode("[l_upcoming_footer_events]"); ?>
+                         <?php echo shortcode_exists('l_upcoming_footer_events')? do_shortcode("[l_upcoming_footer_events]") :"" ?>
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
